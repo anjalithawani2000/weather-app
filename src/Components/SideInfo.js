@@ -6,7 +6,7 @@ import { isEmpty } from "lodash";
 
 const SideInfo = () => {
   const { weatherData } = useWeatherContext();
-  console.log(weatherData, 'ye h side bar')
+
   const { main, weather, sys } = weatherData;
 
   let currentTime = moment().format("hh:mm A");

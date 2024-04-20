@@ -10,7 +10,7 @@ import rainy from '../../Assets/rainy.jpeg'
 const Header = () => {
   const currentDate = moment();
   const { weatherData, setSearchTerm } = useWeatherContext();
-  console.log(weatherData)
+
   // Format the date in the desired format
   const formattedDate = currentDate.format('DD.MM.YYYY');
   const { main, weather, name, sys } = weatherData
