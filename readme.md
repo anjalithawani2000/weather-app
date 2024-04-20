@@ -9,9 +9,6 @@ Welcome to My Awesome Weather App! This app is your ultimate companion for stayi
 - **Customizable Settings:** Personalize the app to match your preferences with customizable settings for units, themes, and notifications.
 - **Multi-platform:** Access your weather forecast seamlessly from any device, whether it's your smartphone, tablet, or computer, ensuring you're always connected no matter where you are.
 
-## User Interface 🖥️
-
-![User Interface](./Assets/UI_Screenshot.png)
 
 ## Installation 🛠️
 
