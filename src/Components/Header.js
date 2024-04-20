@@ -4,13 +4,13 @@ import Footer from "./Footer";
 import { useWeatherContext } from "../Context/weather-context";
 import { isEmpty } from 'lodash';
 import Search from "./Serach";
-import sunny from '../../Assets/sunny.jpg'
+import rainy from '../../Assets/rainy.jpeg'
 // import { useWeatherContext } from "../Context/weather-context";
 
 const Header = () => {
   const currentDate = moment();
-  const weatherData = useWeatherContext();
-
+  const { weatherData, setSearchTerm } = useWeatherContext();
+  console.log(weatherData)
   // Format the date in the desired format
   const formattedDate = currentDate.format('DD.MM.YYYY');
   const { main, weather, name, sys } = weatherData
@@ -18,9 +18,9 @@ const Header = () => {
     (<h1>Loading</h1>) :
     (
       <div className="outer">
-        <div className="main" style={{ backgroundImage: `url(${sunny})` }}>
+        <div className="main" style={{ backgroundImage: `url(${rainy})` }}>
           <div className="align-src-date">
-            <Search />
+            <Search applySearch={setSearchTerm} />
             <h3 className="date">{formattedDate}</h3>
           </div>
           <div className="temp">{(main?.temp - 273.15).toFixed(2)}&deg;C</div>

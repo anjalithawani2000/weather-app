@@ -6,7 +6,7 @@ const Footer = (props) => {
   return (
     <div className="footer">
       <div className="country">{state}</div>
-      <div className="country">{countryInfo.country}</div>
+      <div className="country">{countryInfo?.country}</div>
     </div>
   )
 }

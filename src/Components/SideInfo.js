@@ -5,7 +5,8 @@ import { useWeatherContext } from "../Context/weather-context";
 import { isEmpty } from "lodash";
 
 const SideInfo = () => {
-  const weatherData = useWeatherContext();
+  const { weatherData } = useWeatherContext();
+  console.log(weatherData, 'ye h side bar')
   const { main, weather, sys } = weatherData;
 
   let currentTime = moment().format("hh:mm A");
@@ -47,11 +48,10 @@ const SideInfo = () => {
             <span id="info">Feels Like {(main?.feels_like - 273.15).toFixed(2)}&deg;</span>
             <span id="info-1">{weather[0]?.main}</span>
           </div>
-          <div className="row-card">
-            <Card temp={main} detail={sys} />
+
+          <Card temp={main} detail={sys} />
 
 
-          </div>
         </>
       }
     </div>
