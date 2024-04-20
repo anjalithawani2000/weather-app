@@ -1,0 +1,1 @@
+export const CURRENT_WEATHER = "https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=04004575891aa41f0cabe0ea2fbfb149"
