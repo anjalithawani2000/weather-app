@@ -6,9 +6,6 @@ Welcome to My Awesome Weather App! This app is your ultimate companion for stayi
 
 - **Real-Time Weather Updates:** Stay informed with up-to-the-minute weather updates for your location, ensuring you're never caught off guard.
 - **Beautiful UI:** Immerse yourself in a visually stunning and intuitive user interface designed to make checking the weather a delightful experience.
-- **Customizable Settings:** Personalize the app to match your preferences with customizable settings for units, themes, and notifications.
-- **Multi-platform:** Access your weather forecast seamlessly from any device, whether it's your smartphone, tablet, or computer, ensuring you're always connected no matter where you are.
-
 
 ## Installation 🛠️
 
