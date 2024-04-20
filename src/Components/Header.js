@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { useWeatherContext } from "../Context/weather-context";
 import { isEmpty } from 'lodash';
 import Search from "./Serach";
+import sunny from '../../Assets/sunny.jpg'
 // import { useWeatherContext } from "../Context/weather-context";
 
 const Header = () => {
@@ -17,7 +18,7 @@ const Header = () => {
     (<h1>Loading</h1>) :
     (
       <div className="outer">
-        <div className="main">
+        <div className="main" style={{ backgroundImage: `url(${sunny})` }}>
           <div className="align-src-date">
             <Search />
             <h3 className="date">{formattedDate}</h3>

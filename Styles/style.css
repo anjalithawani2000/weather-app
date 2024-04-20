@@ -24,7 +24,7 @@
 }
 
 .main {
-  background-image: url("../Assets/sunny.jpg");
+  /* background-image: url("../Assets/sunny.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;
