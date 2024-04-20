@@ -11,14 +11,10 @@ export const WeatherProvider = (prop) => {
   }, []);
 
   const fetchData = async () => {
-
-    // const apiData = await fetch(CURRENT_WEATHER);
-    // const apiJson = await apiData.json();
-    // console.log(apiJson, 'meraaaaa')
-    setWeatherData(["apiJson"])
+    const apiData = await fetch(CURRENT_WEATHER);
+    const apiJson = await apiData.json();
+    setWeatherData(apiJson)
   }
-
-  console.log(weatherData, 'wwww set ki hui state')
   return <weatherContext.Provider value={weatherData}>{prop.children}</weatherContext.Provider>
 }
 

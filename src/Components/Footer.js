@@ -1,8 +1,12 @@
-const Footer = () => {
+import lookup from 'country-code-lookup';
+
+const Footer = (props) => {
+  const { state, country } = props;
+  const countryInfo = lookup.byFips(country);
   return (
     <div className="footer">
-      <div className="country">Rajasthan</div>
-      <div className="country">India</div>
+      <div className="country">{state}</div>
+      <div className="country">{countryInfo.country}</div>
     </div>
   )
 }
