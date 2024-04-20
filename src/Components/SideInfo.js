@@ -32,11 +32,8 @@ const SideInfo = () => {
       <div className="second-info">
         {currentTime}
       </div>
-      {isEmpty(weather) ?
-
-        <h1>Loading</h1> :
+      {!isEmpty(weather) ?
         <>
-
           <div className="middle">
             <span id="title">{(main?.temp - 273.15).toFixed(2)}&deg;</span>
             <div className="setup-icon">
@@ -48,13 +45,10 @@ const SideInfo = () => {
             <span id="info">Feels Like {(main?.feels_like - 273.15).toFixed(2)}&deg;</span>
             <span id="info-1">{weather[0]?.main}</span>
           </div>
-
           <Card temp={main} detail={sys} />
-
-
-        </>
+        </> : <div className="DND"></div>
       }
-    </div>
+    </div >
 
 
   )
