@@ -6,7 +6,7 @@ import { isEmpty } from "lodash";
 import { getGreetInfo } from "../utils/getGreetInfo";
 const SideInfo = () => {
   const { weatherData } = useWeatherContext();
-  const { main, weather, sys } = weatherData;
+  const { main, weather, sys, wind, rain } = weatherData;
   let currentTime = moment().format("hh:mm A");
   const greet = getGreetInfo();
 
@@ -22,11 +22,12 @@ const SideInfo = () => {
             <div className="setup-icon">
               <div>
                 <WiStrongWind size={25} color="grey" />
-                6.1mph
+                {wind?.speed} mph
               </div>
               <div>
+
                 <WiRaindrop size={25} color="grey" />
-                90%
+                {!isEmpty(rain) ? rain['1h'] : "0"}%
               </div>
             </div>
           </div>
