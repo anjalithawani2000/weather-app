@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./Header";
+import RightSideInfo from "./RightSideInfo";
 import SideInfo from "./SideInfo";
 import { WeatherProvider } from "../Context/weather-context";
 
@@ -8,7 +8,7 @@ const AppLayout = () => {
   return (
     <div className="app">
       <WeatherProvider>
-        <Header />
+        <RightSideInfo />
         <SideInfo />
       </WeatherProvider>
     </div>

@@ -2,10 +2,9 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
-import { isEmpty } from 'lodash';
 
 const Search = (prop) => {
-  const { applySearch } = prop
+  const { applySearch } = prop;
   const [searchFirstTerm, setFirstSearchTerm] = useState('');
 
   const handleChange = (event) => {
